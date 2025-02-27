@@ -1,0 +1,67 @@
+1832. Check if the Sentence Is Pangram
+
+A pangram is a sentence where every letter of the English alphabet appears at least once.
+
+Given a string sentence containing only lowercase English letters, return true if sentence is a pangram, or false otherwise.
+
+ 
+
+Example 1:
+
+Input: sentence = "thequickbrownfoxjumpsoverthelazydog"
+Output: true
+Explanation: sentence contains at least one of every letter of the English alphabet.
+
+Example 2:
+
+Input: sentence = "leetcode"
+Output: false
+
+ 
+
+Constraints:
+
+    1 <= sentence.length <= 1000
+    sentence consists of lowercase English letters.
+
+
+
+
+
+
+
+
+
+what problem says 
+problem says that given a string  return true if the sentence is a pangram or false if the sentence is not a pangram 
+
+what is pangram ?
+pangram is a sentence where every letter of the alphabet is present in the sentence at least once 
+
+
+
+to solve this problem i have two approaches 
+
+1 approach is 
+using a temp array to store the present character in the array basically counting the characters in the string 
+
+use a freq array and traversal thought the string and update the count of character in freq using this technique   ( ch-'a'  )
+
+then count the freq array if the count is 26 then it is pangram else not a pangram 
+
+tc - to traverse - O(n)
+     to count - O(26)
+      
+sp - O(n) using a temp array to store the count or freq  of the characters in the string
+
+
+2 approach 
+
+using a method  called indexofchar
+
+traverse  from a to z  and find the each character in the string if the corresponding character return -1 then there no exit pangaram return false;
+
+else return true at end of the for loop it means that all characters are present in the string 
+
+index of char how does this work it take a character as input and return the index of that character in the string if present it will return index else -1 which means it does not present in the stirng 
+
