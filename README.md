@@ -1,2 +1,2 @@
 # DSA
-Problem-Solution
+practice and solution
